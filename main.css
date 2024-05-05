@@ -1,0 +1,332 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+    background-color: #121212;
+    color: #cccccc;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    padding: 24px 0;
+    border-bottom: 1px solid #3e3e3e;
+    margin-bottom: 56px;
+    font-size: 1em;
+}
+
+.conteudo {
+    width: 100%;
+}
+
+.store-menu ul {
+    list-style: none;
+    font-weight: bold;
+}
+
+.store-menu ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.store-menu li:hover {
+    color: #ccc;
+}
+
+.about-store {
+    display: flex;
+    width: 100%;
+}
+
+.about-store div {
+    max-width: 100%;
+    min-height: 60%;
+    flex-direction: row;
+    margin-left: 26px;
+}
+
+.about-store h2 {
+    padding: 16px 0;
+    margin-bottom: 32px;
+    border-bottom: 1px solid #2f2f2f;
+}
+
+.about-store #traduct-p,
+p {
+    line-height: 1.5;
+}
+
+.about-store #traduct-p {
+    margin-top: 30px;
+    color: #595959;
+}
+
+.items-prods {
+    max-width: 100%;
+}
+
+.our-prods {
+    max-width: 100%;
+    margin-top: 100px;
+}
+
+.our-prods a {
+    max-width: 100%;
+    text-decoration: none;
+}
+
+.our-prods a img {
+    max-width: 100%;
+}
+
+.prods-wnt {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 24.7%);
+    column-gap: 1%;
+    row-gap: 5%;
+    margin-top: 32px;
+}
+
+.prods-wnt a {
+    width: 95%;
+}
+
+.prods-wnt button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    background-color: rgb(62, 62, 62);
+}
+
+.prods-wnt h3 {
+    width: 100%;
+    word-wrap: break-word;
+}
+
+.value-pro {
+    color: rgb(80, 167, 80);
+}
+
+.store-menu li a {
+    text-decoration: none;
+}
+
+.store-menu li a:hover {
+    color: rgb(255, 255, 255);
+}
+
+.price-titles h3 {
+    margin: 10px 0;
+}
+
+.price-titles p {
+    margin-top: 15px;
+}
+
+button {
+    cursor: pointer;
+}
+
+footer {
+    max-width: 100%;
+    background-color: none;
+    padding: 50px;
+}
+
+button:hover {
+    background-color: rgb(54, 92, 144);
+}
+
+.card-prods {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-prods img {
+    max-width: 100%;
+    height: auto;
+}
+
+.description {
+    flex-grow: 1;
+    overflow: auto;
+}
+
+.price-titles {
+    margin-bottom: 10px;
+}
+
+.price-titles p {
+    margin-top: 15px;
+}
+
+@media screen and (max-width: 640px) {
+    header .container {
+        flex-direction: column;
+    }
+
+    header .store-menu li {
+        margin-top: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0;
+    }
+
+    .conteudo {
+        max-width: 100%;
+    }
+
+    .container {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .about-store {
+        display: block;
+        margin-left: 0;
+    }
+
+    .about-store div {
+        margin: 0;
+        padding: 0;
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-store img {
+        margin-right: 0;
+    }
+
+    .items-prods {
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    .prods-wnt {
+        max-width: 100%;
+        display: block;
+    }
+
+    .container .our-prods h2 {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    .prods-wnt button {
+        margin-bottom: 40px;
+    }
+
+    .prods-wnt img {
+        border-radius: 3px;
+    }
+
+    .description {
+        width: 100%;
+        word-wrap: break-word;
+        font-size: 1em;
+        padding: 24px 0;
+    }
+
+    .description h3,
+    .description .value-pro {
+        display: flex;
+        margin-left: 0;
+    }
+
+    .description p {
+        display: block;
+    }
+
+    .description .value-pro {
+        margin-top: 5px;
+        color: rgb(80, 167, 80);
+    }
+
+    .description p #see-mor {
+        text-decoration: underline;
+    }
+
+    .container .our-prods {
+        max-width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    header .container {
+        max-width: 90%;
+    }
+
+    .container {
+        max-width: 95%;
+        margin: 0 auto;
+    }
+
+    .conteudo {
+        max-width: 95%;
+    }
+
+    .about-store {
+        display: block;
+    }
+
+    .about-store img {
+        width: 100%;
+    }
+
+    .about-store div {
+        margin-left: 0;
+    }
+
+    .items-prods {
+        max-width: 100%;
+        margin-top: 50px;
+    }
+
+    .prods-wnt {
+        max-width: 100%;
+        display: block;
+        margin-top: 32px;
+        font-size: 2em;
+    }
+
+    .prods-wnt button {
+        margin-bottom: 40px;
+        height: 100px;
+        font-size: 1em;
+    }
+
+    .description h3 {
+        margin-top: 40px;
+    }
+
+    .description p {
+        margin: 16px 0;
+    }
+
+    .description h3 {
+        margin-bottom: 16px;
+    }
+}
